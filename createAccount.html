@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" type="image/png" href="./fav1.png"/>
+		<!-- <link rel="stylesheet" href="../filesCSS/style2.css"/> -->
+		<script src="./createAccount.js" defer></script>
+		<title>Create account</title>
+	</head>
+	<body>
+		<a href="./index.html">Back to start page</a>
+		<h2>Creating a new customer account.</h2>
+		<h3>Please fill in all fields:</h3>
+		<form id="newAccountForm">
+			<div>
+				<label for="fName">First name:</label><br>
+				<input type='text' id="fName" name="fName" placeholder='John' required>
+			</div>
+			<div>
+				<label for="lName">Last name:</label><br>
+				<input type='text' id="lName" name="lName" placeholder='Smith' required>
+			</div>
+			<div>
+				<label for="cPwd">Set password:</label><br>
+				<input type='text' id="cPwd" name="cPwd" placeholder='abc123' required>
+			</div>
+			<div>
+				<label for="cPwdAgain">Re-enter password:</label><br>
+				<input type='text' id="cPwdAgain" name="cPwdAgain" placeholder='abc123' required>
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+		<p id="CreateMessage"></p>
+		<body/>
+	</html>	

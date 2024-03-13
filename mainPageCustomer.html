@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- <link rel="stylesheet" href="CSS/style2.css"/> -->
+		<link rel="icon" type="image/png" href="./fav1.png"/>
+		<script src="mainPageCustomer.js" defer></script>
+		<title>Customer page</title>
+	</head>
+	<body>
+		<button type="button" id="displayAll" style="color:blue;">Display all Products</button>
+		<button type="button" id="refineSearch">Refine search</button>
+		<button type="button" id="logout">Logout</button>
+		<br>
+		
+		<form id="refineForm">
+		<div>
+			<label for="color">Color:</label> 
+			<select id="color" name="color">
+				<option value="white">white</option>
+				<option value="beige">beige</option>
+				<option value="grey">grey</option>
+				<option value="red">red</option>
+				<option value="blue">blue</option>
+				<option value="black">black</option>
+				<option value="green">green</option>
+				<option value="yellow">yellow</option>
+				<option value="pink">pink</option>
+			</select>
+			<p>Miles:</p>
+			<label for="minMiles">min</label>
+			<input type="number" id="minMiles" name="minMiles" min="0" max="1000000" value=0>
+			<label for="maxMiles">max</label>
+			<input type="number" id="maxMiles" name="maxMiles" min="0" max="1000000" value=1000000>
+			<label for="latestYear">Latest year</label>
+			<input type="number" id="latestYear" name="latestYear" min="1900" max="2021" value=1900>
+			<input type="submit" value="Submit">
+		</div>
+		</form>
+		<a href="cart.html" id="linkToCart">Go to cart</a>
+		<div id="itemsContainer"><h2>List of items</h2></div>
+	<body/>
+</html>
